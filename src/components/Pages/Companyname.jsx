@@ -1,4 +1,5 @@
 import React from 'react'
+import React from 'react'
 import att from '../../assets/imgs/att.svg'
 import cisco from '../../assets/imgs/cisco.svg'
 import samsung from '../../assets/imgs/samsung.svg'
@@ -8,8 +9,7 @@ import citi from '../../assets/imgs/citi.svg'
 
 
 import havlett from '../../assets/imgs/hewlett_packard_enterprise.svg'
-
-const Companies = () => {
+const Companyname = () => {
   return (
     <div style={{background: '#e6ffe6'}} className='mt-5 p-5'>
         <img src={vols}/>
@@ -23,4 +23,4 @@ const Companies = () => {
   )
 }
 
-export default Companies
+export default Companyname

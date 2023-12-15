@@ -1,37 +1,23 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 
 const Courses = () => {
-  const course = [
-    "Python",
-    "Excel",
-    " Web Development",
-    " Javascript",
-    "Data Science",
-    "Drawing",
-  ];
   return (
     <div className="mt-5">
       <div className="row m-3 d-flex">
-        <h1 className="fw-bold fs-1 ">A broad selection of courses</h1>
-        <h3 className="fs-3 text-body-secondary g-3">
-          Choose from over 210,000 online video courses with new additions
-          published every month
-        </h3>
-      </div>
-      <div className="fw-bold fs-5 text-body-secondary">
-       
-         <div className="menu">
-          {course.map((courses) => (
-            <div className="d-inline p-4">
-              {courses}
-            </div>
-          ))}
+        <h1 className="fw-bold fs-1 ">What to learn next</h1>
+        <p className="fw-bold fs-3  g-3">
+          Popular for Front End Web Developers
+          <a className="link-opacity-100 fs-6 p-4 " href="#">
+            Edit Occupation
+          </a>
+        </p>
+
+        <div className="fw-bold fs-5 text-body-secondary">
+          <Button variant="info" className="rounded-0 bg-primary-subtle fw-bold">New</Button>{" "}
+          <span className="text-secondary fs-6 fw-light ">Inspired by your selection</span>
         </div>
       </div>
-
-     
-       
-      
     </div>
   );
 };

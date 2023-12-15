@@ -1,34 +1,23 @@
 import React from "react";
-import att from "../../assets/imgs/att.svg";
-import cisco from "../../assets/imgs/cisco.svg";
-import samsung from "../../assets/imgs/samsung.svg";
-import ericsson from "../../assets/imgs/ericsson.svg";
-import vols from "../../assets/imgs/volkswagen.svg";
-import citi from "../../assets/imgs/citi.svg";
-import PG from "../../assets/imgs/procter_gamble.svg";
-import havlett from "../../assets/imgs/hewlett_packard_enterprise.svg";
-const Companyname = () => {
-  const images = [vols, samsung, cisco, att, PG, havlett, citi, ericsson];
+import Button from "react-bootstrap/Button";
 
+const Companyname = () => {
   return (
-    <div style={{ background: "#f2f2f2" }} className="mt-5 container-fluid mb-5">
-      <div className="p-5 d-flex justify-content-center">
+    <div style={{ background: "#000" }} className="mx-4 my-5  ">
+      <div className="p-5 d-flex  justify-content-between  align-items-center">
         <div>
-          <h5 className="text-secondary p-4 fs-4 ">
-            Trusted by over 15,000 companies and millions of learners around the
-            world
-          </h5>
-          <div className="  d-flex justify-content-center grid gap-0 column-gap-3 ">
-            {images.map((img) => (
-              <img
-                src={img}
-                alt="logo of companies"
-                width="100"
-                height="60"
-                className=" g-col-6 d-flex justify-content-center "
-              />
-            ))}
-          </div>
+          <span className="bg-black text-white fw-bold fs-5">
+            Training 2 or more people?
+          </span>
+          <span className="bg-black text-white fs-5">
+            {" "}
+            Get your team access to Udemy's top 25,000+ courses
+          </span>
+        </div>
+
+        <div>
+          <Button variant="light" className="bg-white p-3 fw-bold rounded-0">Get Udemy Business</Button>{" "} {" "}
+          <Button variant="outline-light " className="p-3 fw-bold rounded-0">Dismiss</Button>{" "}
         </div>
       </div>
     </div>

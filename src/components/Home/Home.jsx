@@ -4,11 +4,13 @@ import Corousel from '../Pages/Corousel'
 import Companyname from '../Pages/Companyname'
 import Courses from '../Pages/Courses'
 import Products from '../Pages/Products'
+import Department from '../Pages/Department'
 
 
 const Home = () => {
   return (
     <div>
+      <Department/>
         <Corousel/>
         <Companyname/>
         <Courses/>

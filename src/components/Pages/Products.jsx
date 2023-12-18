@@ -6,53 +6,52 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 
 const Products = () => {
-  // const [data, setData] = useState([]);
 
-  // useEffect(() => {
-  //   axios
-  //     .get(`http://localhost:3031/courses`)
-  //     .then((res) => setData(res.data))
-  //     .catch((err) => console.log(err));
-  // }, []);
+
+
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3031/courses")
+      .then((response) => response.json())
+      .then((posts) => setPosts(posts));
+  }, []);
   return (
-    // <div >
-    //   {data.map((datas) => (
-    //     <div className="d-inline fs-6 fw-normal ">{datas.title}</div>
-    //   ))}
-    // </div>
-
-<Card style={{ width: "19rem" }} className="m-4">
-    <Card.Img variant="top" src={react} />
-    <Card.Body>
-      <Card.Title className="fw-bold">
-        React and Type script the practicle guide
-      </Card.Title>
-      <Card.Text className="fw-normal text-secondary">
-        Academind by Maximilian
-      </Card.Text>
-      <span className="fw-bold">4.8</span>
-      <span style={{ color: "red" }}>
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-        <FontAwesomeIcon icon={faStar} />
-      </span>
-      <span className="fw-normal text-secondary">(474)</span>
-      <br />
-      <div>
-        <span className="fw-bold fs-5">$12.99</span>{" "}
-        <strike className="fw-bold fs-5 text-secondary">$44.99</strike>
-      </div>
-      <Button style={{ background: "orange", color: "#000" }}>
-        Highest Rated
-      </Button>
-    </Card.Body>
-  </Card>
-
+    <div className="d-flex ">
+      {posts.map((post,key) => (
+        <div className="d-inline fs-6 fw-normal ">
+          <Card key={key} style={{ width: "18rem" , border: "none"}} className="m-4">
+            <Card.Img variant="top" src={react} />
+            <Card.Body>
+              <Card.Title className="fw-bold">
+                {post.title}
+              </Card.Title>
+              <Card.Text className="fw-normal text-secondary">
+              {post.text}
+              </Card.Text>
+              <span className="fw-bold">{post.rating}</span>
+              <span style={{ color: "red" }}>
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </span>
+              <span className="fw-normal text-secondary">{post.review}</span>
+              <br />
+              <div>
+                <span className="fw-bold fs-5">{post.price}</span>{" "}
+                <strike className="fw-bold fs-5 text-secondary">{post.oldprice}</strike>
+              </div>
+              <Button style={{ background: "#ffb366", color: "#000",border:'none' }} className="rounded-0">
+               {post.btntext}
+              </Button>
+            </Card.Body>
+          </Card>
+        </div>
+      ))}
+    </div>
   );
-
-  
 };
 
 export default Products;

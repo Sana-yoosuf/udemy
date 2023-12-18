@@ -5,6 +5,11 @@ import Companyname from '../Pages/Companyname'
 import Courses from '../Pages/Courses'
 import Products from '../Pages/Products'
 import Department from '../Pages/Department'
+import Popular from '../Pages/Popular'
+import Ourservice from '../Pages/Ourservice'
+import Recommendation from '../Pages/Recommendation'
+import View from '../Pages/View'
+import Topics from '../Pages/Topics'
 
 
 const Home = () => {
@@ -15,6 +20,11 @@ const Home = () => {
         <Companyname/>
         <Courses/>
         <Products/>
+        <Popular/>
+        <Ourservice/>
+        <Recommendation/>
+        <View/>
+        <Topics/>
         
     </div>
   )

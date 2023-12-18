@@ -6,8 +6,54 @@
         "rating": "4.8",
         "review":"(474)",
         "price": "$12.99",
-        "old price": "$44.99",
-        "btntext": "Buy Me"
+        "oldprice": "$44.99",
+        "btntext": "Highest Rated",
+        "image":"../../assets/imgs/react-ts.jpg"
+       
+      },
+      {
+        "title": "React and TypeScript - The Practicle Guide",
+        "text": "Academind by Maximilian",
+        "rating": "4.8",
+        "review":"(474)",
+        "price": "$12.99",
+        "oldprice": "$44.99",
+        "btntext": "Best Seller",
+        "image":"../../assets/imgs/react-ts.jpg"
+       
+      },
+      {
+        "title": "React and TypeScript - The Practicle Guide",
+        "text": "Academind by Maximilian",
+        "rating": "4.8",
+        "review":"(474)",
+        "price": "$12.99",
+        "oldprice": "$44.99",
+        "btntext": "Best Seller",
+        "image":"../../assets/imgs/react-ts.jpg"
+        
+      },
+      {
+        "title": "React and TypeScript - The Practicle Guide",
+        "text": "Academind by Maximilian",
+        "rating": "4.8",
+        "review":"(474)",
+        "price": "$12.99",
+        "oldprice": "$44.99",
+        "btntext": "Best Seller",
+        "image":"../../assets/imgs/react-ts.jpg"
+       
+      },
+      {
+        "title": "React and TypeScript - The Practicle Guide",
+        "text": "Academind by Maximilian",
+        "rating": "4.8",
+        "review":"(474)",
+        "price": "$12.99",
+        "oldprice": "$44.99",
+        "btntext": "Best Seller",
+        "image":"../../assets/imgs/react-ts.jpg"
+       
       }
      
     ]

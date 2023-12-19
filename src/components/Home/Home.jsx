@@ -10,6 +10,8 @@ import Ourservice from '../Pages/Ourservice'
 import Recommendation from '../Pages/Recommendation'
 import View from '../Pages/View'
 import Topics from '../Pages/Topics'
+import Webdev from '../Pages/Webdev'
+import Featuredreact from '../Pages/Featuredreact'
 
 
 const Home = () => {
@@ -25,6 +27,8 @@ const Home = () => {
         <Recommendation/>
         <View/>
         <Topics/>
+        <Webdev/>
+        <Featuredreact/>
         
     </div>
   )
